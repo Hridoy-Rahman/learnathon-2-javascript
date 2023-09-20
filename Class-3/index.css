@@ -1,0 +1,270 @@
+.top-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 30px 0px 30px;
+}
+
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.image {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.profile-img {
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.nav-name{
+    color: gray;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.name {
+    font-size: large;
+    text-align: center;
+    align-items: center;
+    padding: 10px 50px 10px 50px;
+    border: 1px solid rgb(219, 214, 214);
+    border-radius: 5px;
+    background-color: rgb(249, 246, 246);
+}
+
+
+.top-navigation a {
+    text-decoration: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-nav-section {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left-navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    width: 250px;
+
+}
+
+.vertical {
+    border-left: 1px solid rgb(218, 214, 214);
+    height: auto;
+}
+
+.hr {
+    border-bottom: 1px solid rgb(218, 214, 214);
+    height: auto;
+
+}
+
+.left-nav-option {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left-nav-option li a {
+    color: rgb(138, 131, 131);
+    margin-bottom: 20px;
+    font-size: x-large;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    text-decoration: none;
+}
+
+
+.left-navigation ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.left-navigation li {
+    margin: 5px 0;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    margin: auto;
+    padding: 100px;
+}
+
+
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.edit-button {
+    background-color: rgb(244, 77, 16);
+    font-size: 10px;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    position: relative;
+    top: -10px;
+    right: 10px;
+    transform: translate(-50%, -50%);
+
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    font-size: large;
+    margin-bottom: 30px;
+}
+
+
+
+.button {
+    padding: 10px 50px 10px 50px;
+    background-color: rgb(241, 90, 35);
+    font-size: 20px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.nav-dot {
+    background-color: rgb(244, 77, 16);
+    font-size: 0.5px;
+    color: rgb(244, 77, 16);
+    padding: 5px;
+    border-radius: 5px;
+    position: relative;
+    right: 7px;
+    top: -15px;
+    transform: translate(-50%, -50%);
+}
+
+
+.user-dot {
+    background-color: rgb(244, 77, 16);
+    font-size: 10px;
+    color: rgb(244, 77, 16);
+    padding: 10px 1px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position: relative;
+    top: 15px;
+    left: 98px;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+    body{
+        width: 500px;
+    }
+    .top-navigation {
+        padding: 10px 20px 0;
+    }
+
+    .top-nav {
+        font-size: 18px;
+        gap: 10px;
+    }
+
+    .image {
+        width: 20px;
+        height: 20px;
+    }
+
+    .profile-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .nav-name {
+        font-size: 12px;
+        
+    }
+    .left-nav-section {
+        height: 100vh;
+        
+    }
+
+    .left-navigation {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .left-nav-option li a {
+        font-size: 16px;
+        gap: 10px;
+    }
+
+    .profile-section {
+        padding: 20px;
+    }
+
+    .profile {
+        margin-top: 20px;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .edit-button {
+        font-size: 8px;
+        padding: 3px;
+        top: 5px;
+        right: 20px;
+        transform: translate(-50%, -50%);
+    }
+
+    .form {
+        flex-direction: column;
+        gap: 20px;
+        font-size: medium;
+        margin-bottom: 20px;
+    }
+
+   
+
+    .button {
+        padding: 8px 15px;
+        font-size: 16px;
+    }
+
+
+    .user-dot {
+        top: 10px;
+        left: 20px;
+    }
+}
