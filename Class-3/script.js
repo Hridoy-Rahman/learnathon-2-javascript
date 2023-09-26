@@ -1,3 +1,4 @@
+// Updating profile name
 function updateProfileName(newName,newLocation) {
     const profileNameElement = document.getElementById("profile-name");
     const profileLocationElement = document.getElementById("profile-location");
