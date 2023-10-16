@@ -1,20 +1,20 @@
 // Object Creation
-// const person={
-//     fname: 'Hridoy',
-//     lname: 'Rahman',
-//     age:24,
-//     color: 'black'
-// }
+const person = {
+    fname: 'Hridoy',
+    lname: 'Rahman',
+    age:24,
+    color: 'black'
+}
 
-// console.log('Before delete age ')
-// console.log(person);
+console.log('Before delete age ')
+console.log(person);
 
 
 // // deleting object property
 
-// delete person.age;
-// console.log('After deleting age property');
-// console.log(person);
+delete person.age;
+console.log('After deleting age property');
+console.log(person);
 
 
 // --------------------------------------
@@ -22,83 +22,85 @@
 // --------------------------------------
 
 // -------------Shallow Copy----------------      It will work only 1st level of object
-// let person={
-//     name:'Rakib',
-//     age:24
-// }
 
-// let person2=person;
-// person2.name='Hridoy'
+let person1 = {
+    name:'Rakib',
+    age:24
+}
 
-// console.log(person);
-// console.log(person2);
+let person2=person1;
+person2.name = 'Hridoy'
+
+console.log(person1);
+console.log(person2);
 
 
 
-// let person={
-//     name:'Rakib',
-//     age:24
-// }
+let person3 = {
+    name:'Rakib',
+    age:24
+}
 
-// let person2={...person};
-// person2.name='Hridoy'
+let person4 = {...person3};
+person2.name = 'Hridoy'
 
-// console.log(person);
-// console.log(person2);
+console.log(person3);
+console.log(person4);
 
 
 // -----------------Deep Copy----------------
 //  It will work for higher order object
-// let person={
-//     name:'Rakib',
-//     age:24,
-//     address:{
-//         city:'Bogura',
-//         division:'Rajshahi'
-//     },
-//     getData: function(){
-//         console.log('This is a function')
-//     }
-// }
 
-// let person2=JSON.parse(JSON.stringify(person))
-// person2.address.city='Dinajpur'
+let person5 = {
+    name: 'Rakib',
+    age: 24,
+    address: {
+        city:'Bogura',
+        division:'Rajshahi'
+    },
+    getData: function(){
+        console.log('This is a function')
+    }
+}
 
-// console.log(person);
-// console.log(person2);
+let person6 = JSON.parse(JSON.stringify(person5))
+person6.address.city = 'Dinajpur'
+
+console.log(person5);
+console.log(person6);
 
 
 // ---------------------------------------------------------------------
 // -----------------------------Private Properties----------------------
 // ---------------------------------------------------------------------
 
-// let Rectangle=function(height,width){
+let Rectangle = function(height,width){
 
-//     this.height=height;
-//     this.width=width;
+    this.height = height;
+    this.width = width;
 
-//     var position={
-//         x:37,
-//         y:100
-//     }
+    var position = {
+        x:37,
+        y:100
+    }
 
 
-//     var printProperties=function(){
-//         console.log('Height :',height)
-//         console.log('Width :',width)
-//     }
+    var printProperties = function(){
+        console.log('Height :',height)
+        console.log('Width :',width)
+    }
 
-//     this.draw=function(){
-//         console.log('Rectangle');
-//         printProperties()
-//         console.log('X =',position.x,'Y =',position.y);
+    this.draw=function(){
+        console.log('Rectangle');
+        printProperties()
+        console.log('X = ',position.x,'Y = ',position.y);
 
-//     }
+    }
 
-// }
+}
 
-// let rect= new Rectangle(32,43);
-// rect.draw()
+let rect = new Rectangle(32,43);
+rect.draw()
 
 
 
@@ -107,23 +109,23 @@
 // -----------------Object Method And this keyword------------------
 // ------------------------------------------------
 
-// const person = {
-//     firstName: "John",
-//     lastName: "Doe",
-//     id: 5566,
-//     fullName: function () {
-//         return this.firstName + " " + this.lastName;
-//     }
-// };
+const student = {
+    firstName: "John",
+    lastName: "Doe",
+    id: 5566,
+    fullName: function () {
+        return this.firstName + " " + this.lastName;
+    }
+};
 
-// person.age=24;
+student.age=24;
 
-// // person.fullName=function(){
-// //     return this.firstName +' '+ this.lastName
-// // }
+student.fullName=function(){
+    return this.firstName + ' ' + this.lastName
+}
 
-// console.log(person)
-// console.log(person.fullName())
+console.log(student)
+console.log(student.fullName())
 
 
 
@@ -132,10 +134,10 @@
 // ---------------------------------------
 // when a function return thye same result all the time then it is called a pure function
 
-// const sqrt=function(n){
-//     return n*n
-// }
+const sqrt = function(n){
+    return n*n
+}
 
-// console.log(sqrt(3))
-// console.log(sqrt(3))
-// console.log(sqrt(3))
+console.log(sqrt(3))
+console.log(sqrt(3))
+console.log(sqrt(3))
